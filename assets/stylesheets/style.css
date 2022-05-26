@@ -9,6 +9,7 @@
   --font-light: 300;
   --font-medium: 500;
   --font-bold: 900;
+  --font-logo: "Roboto", serif;
 }
 
 header {
@@ -23,3 +24,73 @@ header {
   position: relative;
 }
 
+.header__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.language-select {
+  margin-left: auto;
+}
+
+.language,
+.language-select {
+  margin-left: auto;
+  font-family: var(--font-logo);
+  font-size: 20px;
+  font-weight: var(--font-medium);
+  color: var(--color-text-white);
+}
+
+.logo__tagline {
+  font-family: var(--font-logo);
+  font-size: 34px;
+  font-weight: var(--font-bold);
+  color: var(--color-text-white);
+}
+
+
+.login-block {
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.login-block__link {
+  display: flex;
+  align-items: center;
+}
+
+.login-block__link-icon {
+  width: 18px;
+  height: 18px;
+}
+.login-block__link-text {
+  font-family: var(--font-logo);
+  font-size: 20px;
+  font-weight: var(--font-medium);
+  color: var(--color-text-white);
+  margin-left: 5px;
+}
+
+.menu-burger {
+  display: none;
+}
+
+.nav__menu {
+  display: flex;
+  gap: 10px;
+}
+
+.menu-item__link {
+  font-family: var(--font-logo);
+  font-size: 20px;
+  font-weight: var(--font-medium);
+  color: var(--color-text-white);
+}
