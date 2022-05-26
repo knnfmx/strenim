@@ -1,0 +1,25 @@
+:root {
+  --bg-color-dark-purple: #000028;
+  --bg-color-dark-gray: #2a2927;
+  --color-light-blue: #00f7c2;
+  --color-light-blue-hover: #00ffb9;
+  --color-dark-blue: #0cc;
+  --color-text-white: #fff;
+  --color-text-blue: #42a4e3;
+  --font-light: 300;
+  --font-medium: 500;
+  --font-bold: 900;
+}
+
+header {
+  width: 100%;
+  background-color: var(--bg-color-dark-purple);
+}
+
+.container {
+  width: 1440px;
+  padding: 30px;
+  margin: 0 auto;
+  position: relative;
+}
+
