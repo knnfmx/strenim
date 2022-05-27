@@ -57,6 +57,7 @@ section {
 .language.language-active {
   color: var(--color-light-blue-4);
 }
+
 .logo__tagline {
   font-family: var(--font-logo);
   font-size: 34px;
@@ -96,6 +97,9 @@ section {
   gap: 10px;
 }
 
+.menu-item {
+  padding: 5px;
+}
 .menu-item__link {
   font-family: var(--font-logo);
   font-size: 20px;
@@ -103,6 +107,9 @@ section {
   color: var(--color-text-white);
 }
 
+.menu-item:hover > .menu-item__link {
+  color: var(--color-light-blue-2);
+}
 /** TOP DESCRIPTION */
 
 .top-description__wrapper {
@@ -122,7 +129,7 @@ section {
   margin-top: 163px;
 }
 
-.top-description__title-block {
+.title-block {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -149,16 +156,76 @@ section {
   color: var(--color-text-white);
   font-weight: var(--font-medium);
   margin-top: 42px;
+  margin-bottom: 32px;
 }
-.top-description__link {
+
+.more-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 130px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.more-info__link {
   font-family: var(--font-logo);
   font-size: 20px;
-  font-family: var(--font-logo);
   color: var(--color-light-blue-4);
-  margin-top: 32px;
+}
+.more-info__arrow {
+  height: 20px;
+  fill: var(--color-light-blue-4);
+}
+.more-info:hover > .more-info__link {
+  color: var(--color-light-blue-2);
+}
+.more-info:hover > .more-info__arrow {
+  fill: var(--color-light-blue-2);
 }
 
 .top-description__img {
-  width: 698px;
-  height: 728px;
+  width: 690px;
+  height: 550px;
 }
+
+/** ANIMATED ATOM SECTION */
+
+.animated-atom__wrapper {
+  background-color: var(--bg-color-dark-purple);
+}
+
+.animated-atom__container {
+  display: flex;
+  justify-content: center;
+  gap: 250px;
+}
+
+.animated-atom__img__wrapper {
+  align-self: center;
+}
+
+.animated-atom__description-block {
+  width: 500px;
+}
+
+.animated-atom__description {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 42px;
+  margin-bottom: 32px;
+}
+
+.animated-atom__description-row {
+  font-family: var(--font-logo);
+  font-size: 15px;
+  color: var(--color-text-white);
+  font-weight: var(--font-light);
+}
+
+.description-row_bold {
+  font-weight: var(--font-medium);
+}
+
