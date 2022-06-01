@@ -5,8 +5,11 @@
   --color-light-blue-2: #00ffb9;
   --color-light-blue-3: #00e6dc;
   --color-light-blue-4: #0cc;
+  --color-gray: #666666;
   --color-text-white: #fff;
   --color-text-blue: #42a4e3;
+  --color-soft-white: #ffffff50;
+  --color-white: #ffffff;
   --overlay-color: #000000a6;
   --font-light: 300;
   --font-medium: 500;
@@ -233,7 +236,7 @@ section {
 /** Gallery */
 
 .gallery {
-  background-color: var(--bg-color-dark-gray);
+  background-color: var(--bg-color-dark-purple);
 }
 
 .gallery__preview {
@@ -297,4 +300,71 @@ section {
   color: var(--color-text-white);
   padding: 0 20px;
   text-align: justify;
+}
+
+
+/** SLIDER */
+
+.slider {
+  background-color: var(--bg-color-dark-purple);
+}
+
+.slider__container {
+  width: 1440px;
+  height: 480px;
+  padding: 0;
+}
+
+.slider-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  width: 50px;
+  position: absolute;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.slider__img-container {
+  display: flex;
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.slide-left {
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.slide-right {
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.slider-controls__icon {
+  width: 30px;
+  height: 39px;
+  fill: transparent;
+  cursor: pointer;
+}
+
+.slider__container:hover .slider-controls__icon {
+  fill: var(--color-soft-white)
+}
+
+.slide-left:hover {
+  background: linear-gradient(to right, var(--bg-color-dark-purple), transparent) ;
+}
+.slide-right:hover {
+  background: linear-gradient(to right, transparent, var(--bg-color-dark-purple)) ;
+}
+
+.slider-controls:hover .slider-controls__icon {
+  fill: var(--color-white);
 }
