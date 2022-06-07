@@ -149,11 +149,61 @@
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts__container container"></div>
+      <div class="contacts__container container">
+        <div class="title-block">
+          <div class="title-block__vertical-bar"></div>
+          <h2 class="title-block__title">Контакты</h2>
+        </div>
+        <div class="contacts__wrapper">
+          <div class="contacts__list__wrapper">
+            <ul class="contacts__list">
+              <li class="list-item">
+                <a class="list-item__link" href=""><span class="item-link_bold-text">tel:</span></a>
+              </li>
+              <li class="list-item">
+                <a class="list-item__link" href=""><span class="item-link_bold-text">fax:</span></a>
+              </li>
+              <li class="list-item">
+                <a class="list-item__link" href=""><span class="item-link_bold-text">e-mail:</span></a>
+              </li>
+              <li class="list-item">
+                <a class="list-item__link" href=""><span class="item-link_bold-text">address:</span></a>
+              </li>
+            </ul>
+            <div class="contact-form__wrapper">
+              <h2 class="contact-form__title"></h2>
+              <form class="contact-form" action="mailto:#">
+                <fieldset class="contact-form__field-wrapper">
+                  <input class="contact-form__input" id="email" type="email" placeholder=" " required autocomplete="off">
+                  <label for="email" class="contact-form__label">E-mail <sup class="label-star">&#10034;</sup></label>
+                </fieldset>
+                <fieldset class="contact-form__field-wrapper">
+                  <input class="contact-form__input" id="tel" type="tel" placeholder=" " required autocomplete="off">
+                  <label for="tel" class="contact-form__label">Phone <sup class="label-star">&#10034;</sup></label>
+                </fieldset>
+                <fieldset class="contact-form__field-wrapper">
+                  <textarea class="contact-form__textarea" name="message" id="contact-form-textarea" placeholder=" " required autocomplete="off"></textarea>
+                  <label for="contact-form-textarea" class="contact-form__label">Message <sup class="label-star">&#10034;</sup></label>
+                </fieldset>
+              </form>
+              <button class="contact-form__send-button">отправить</button>
+            </div>
+          </div>
+          <div class="contacts__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d481267.7449986657!2d-155.57296229241047!3d19.545723584412638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sby!4v1654124333295!5m2!1sen!2sby" width="640" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   <footer>
-    <div class="footer__contaier container"></div>
+    <div class="footer__contaier container">
+      <div class="logo">
+        <a href="#" class="logo__link">
+          <p class="logo__tagline">strenim</p>
+        </a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
