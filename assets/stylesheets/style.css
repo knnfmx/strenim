@@ -225,6 +225,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 250px;
+  padding: 120px 30px;
 }
 
 .animated-atom__img__wrapper {
@@ -259,7 +260,9 @@ section {
 .gallery {
   background-color: var(--bg-color-dark-purple);
 }
-
+.gallery__container {
+  padding: 120px 30px;
+}
 .gallery__preview {
   display: flex;
   justify-content: space-around;
@@ -412,6 +415,23 @@ section {
   justify-content: space-between;
 }
 
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contacts__list-item__link {
+  font-family: var(--font-logo);
+  font-size: 15px;
+  font-weight: var(--font-light);
+  color: var(--color-text-white);
+}
+
+.item-link_bold-text {
+  font-weight: var(--font-bold);
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -524,6 +544,8 @@ section {
   outline: none;
   background-color: var(--color-white);
   color: var(--bg-color-dark-purple);
+  transition: all 0.3s;
+  cursor: pointer;
 }
 
 .contact-form__send-button:hover {
