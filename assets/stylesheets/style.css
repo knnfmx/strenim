@@ -187,26 +187,39 @@ section {
 .more-info {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 130px;
-  background-color: transparent;
+  justify-content: center;
   border: none;
   cursor: pointer;
+  padding: 22px 36px;
+}
+
+.more-info__btn {
+  width: 250px;
+  background: linear-gradient(90deg, var(--color-light-blue-2), var(--color-light-blue-3));
+  color: var(--bg-color-dark-purple);
+}
+.more-info__transparent {
+  background-color: transparent;
+  color: var(--color-light-blue-4);
 }
 
 .more-info__link {
   font-family: var(--font-logo);
   font-size: 20px;
-  color: var(--color-light-blue-4);
 }
 .more-info__arrow {
   height: 20px;
   fill: var(--color-light-blue-4);
 }
-.more-info:hover > .more-info__link {
+
+.more-info__btn:hover {
+  background: var(--color-light-blue-2);
+}
+
+.more-info__transparent:hover > .more-info__link {
   color: var(--color-light-blue-2);
 }
-.more-info:hover > .more-info__arrow {
+.more-info__transparent:hover > .more-info__arrow {
   fill: var(--color-light-blue-2);
 }
 
